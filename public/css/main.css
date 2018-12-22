@@ -1,0 +1,392 @@
+/**
+ * Grid container
+ */
+#main {
+	margin-top: 7em;
+}
+#main-channel{
+  margin-top: 6em;
+}
+#tiles {
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+#tiles li:hover img{
+	opacity:0.8;
+}
+/**
+ * Grid items
+ */.scroll-box {
+            overflow-y: scroll;
+            min-height: 200px;
+            max-height: 300px;
+            padding: 1rem
+        }
+
+/*ITEMS SPRITE;*/
+
+
+
+#navlist {
+    position: relative;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a {
+    height: 44px;
+    display: block;
+}
+
+.video {
+    background: url('/images/sprites.png');
+        background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.photo {
+   background: url('/images/sprites.png');
+       background-position: 0 -17px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.channel {
+    background: url('/images/sprites.png');
+    background-position: 0 -34px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+/*ITEMS SPRITE;*/
+
+#tiles li {
+ 	width: 280px;
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	display: block;
+	cursor: pointer;
+	border-radius: 0.2em;
+}
+.ybframe{
+  width:100%;
+  height:100%;
+}
+.othervines{
+  width:100%;
+  height:100%;
+}
+.hover-href:hover{
+  color: yellow;
+}
+.hedaerbg{
+  background:url('../images/header-texture.png');
+}
+@media only screen and (width: 1366px) {
+.ybframe{
+  width:100%;
+  height:500px;
+}
+}
+@media only screen and (max-width: 1920px) {
+  .ybframe{
+  width:100%;
+  height:500px;
+}
+}
+
+#tiles li img{
+	border-top-left-radius:0.2em;
+	border-top-right-radius:0.2em;
+}
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+ 	display: block;
+	width: 100%;
+}
+
+/**
+ * Grid item text
+ */
+
+footer {
+  text-align: center;
+
+}
+
+footer a {
+  color: #435DC5;
+  text-decoration: none;
+}
+
+/**
+ * Progress bar for imagesLoaded
+ */
+.progress-bar {
+  background-color: #0BC20B;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  box-shadow: 0 1px 3px rgba(11, 194, 11, 0.2);
+  -webkit-transition: width 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out;
+       -o-transition: width 0.3s ease-out;
+          transition: width 0.3s ease-out;
+}
+
+/**
+ * Placerholder css
+ */
+.wookmark-placeholder {
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  z-index: -1;
+}
+
+.example-tiles {
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+.page-loading {
+    color: #717171;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.example-tiles li {
+  display: block;
+  list-style-type: none;
+  float: left;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.example-tiles a,
+.example-tiles a:hover {
+  color: #555;
+  background-color: #eee;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.example-tiles a:hover {
+  background-color: #ddd;
+}
+/*--media Quries for 640px-monitors-*/
+@media only screen and (max-width:640px) and (min-width:480px) {
+	#main {
+		margin-top: 7em;
+	}
+  #main-channel{
+  margin-top: 4em;
+}
+}
+/*--media Quries for 480px-monitors-*/
+@media only screen and (max-width:480px) and (min-width:320px) {
+	#main {
+		margin-top: 6.5em;
+	}
+  #main-channel{
+  margin-top: 6.5em;
+}
+}
+/*--media Quries for 320px-monitors-*/
+@media only screen and (max-width:320px) and (min-width:240px) {
+	#main {
+		margin-top: 9em;
+	}
+  #main-channel{
+  margin-top: 6em;
+}
+	#tiles li {
+		width: 266px;
+	}
+}
+
+.navbar_pro
+{
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
+  border:none;
+  width: 300px;
+}
+.navbar_pro i
+{
+  width: 60px;
+}
+
+.dropdown-menu .header
+{
+  height: 72px;
+  position: relative;
+
+  background-color:#eeeeee;
+  width: 100%;
+
+}
+.dropdown-menu .header .description-drop
+{
+
+    min-width: 0;
+
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.dropdown-menu .header .login
+{
+  color:#0A0A0A;
+  font-weight: 600;
+  }
+  .dropdown-menu .header .email
+  {
+    overflow: hidden;
+    font-weight: 400;
+
+        display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+.dropdown-menu .a-dropnav
+{
+padding: 16px;
+    display: flex;
+        position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+
+}
+
+.insta-icons
+{
+  background: url('/images/370fa7d2631d.png') no-repeat;
+
+}
+
+.dropdown-menu .image-drop img
+{
+  
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+.boxing-item
+{
+  padding-top:8px;
+  padding-bottom: 8px;
+}
+
+.image-dropdown img:hover
+{
+
+  border: 1px solid #b73e01;
+  border-radius: 100%;
+}
+
+.menu-circleitem
+{
+  -webkit-transition: all .25s linear;
+     -moz-transition: all .25s linear;
+      -ms-transition: all .25s linear;
+       -o-transition: all .25s linear;
+          transition: all .25s linear;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+         justify-content: center;
+       align-items: center;
+    text-align: center;
+  width: 40px;
+  height: 40px;
+
+}
+.menu-circleitem .menu-icon
+{
+
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+         justify-content: center;
+       align-items: center;
+    text-align: center;
+  width: 100%;
+  height: auto;
+}
+.menu-circleitem:hover
+{
+  background-color:#ccc;
+  border-radius: 100%;
+
+}
+.search-icon
+{
+
+  background-position: -157px -78px;
+  width: 24px;
+  height: 24px;
+}
+.feed-icon
+{
+  background-position: -80px -117px;
+  width: 20px;
+  height: 24px;
+
+}

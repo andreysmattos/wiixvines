@@ -1,0 +1,50 @@
+:root{
+    --darkpink: #cf2fd0;
+}
+#mobile_channel{
+    display:none;
+}
+.inter-sidebar{
+    display:block;
+    transition : width 1s linear;
+}
+.inter-sidebar.short{
+transition : width 1s linear;
+   display:none;
+}
+
+#div1 {
+  height: 100px;
+  width: 600px;
+  background: #eee;
+  text-align: center;
+  transition : width 1s linear;
+}
+
+#div1.short{
+
+   width : 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .inter-sidebar{
+    display:none;
+    }
+    #mobile_channel {
+        display:block;
+    }
+    #desktop_side {
+        display:none;
+    }
+    #article_side{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #mobile_channel {
+        display:none;
+    }
+    #desktop_side {
+        display:block;
+    }
+}
